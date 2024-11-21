@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+.carskinPopup{
+    width: 400px;
+    height: 300px;
+    background-color: #292828;
+    border: 5px solid #1f1e1e;
+    border-radius: 10px;
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.skin{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.skinIcon{
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+   
+}
+.wrap {
+    width: 100%;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(45deg, #204a25,#1c5833,#28732a,#2d882f,#309e33);
+}
+
+.roadContainer {
+    width: 100%;
+    height: 40vh;
+    background-color: #333;
+}
+
+.carContainer {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 10%;
+    transform: translateX(-50%);
+    margin-top: 200px;
+    transition: 0.4s;
+
+}
+
+.car {
+    width: 250px;
+    height: 100px;
+    background-image: url('https://cdn.pixabay.com/photo/2021/01/19/12/38/car-5931100_960_720.png');
+    background-size: cover;
+    background-position: center;
+ 
+}
+
+.frontLignt {
+    width: 40px;
+    height: 20px;
+    background-color: rgba(213, 213, 108, 0.845);
+    filter: blur(10px);
+    position: relative;
+    top: 40px;
+    left: -10px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.backLight {
+    width: 40px;
+    height: 20px;
+    background-color: rgba(213, 108, 108, 0.845);
+    filter: blur(10px);
+    position: relative;
+    top: 40px;
+    left: 20px;
+    opacity: 0;
+    transform: 0.3s;
+}
+
+.settingWindow{
+    width: 400px;
+    height: 200px;
+    background-color: #33333389;
+    display: flex;
+     border-radius: 30px;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     align-items: center;
+}
+
+.settingWindow i{
+    font-size: 26px;
+    color: #fff;
+}
+.lightControll{
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.8s;
+    
+}
+.lightControll:hover{
+   scale: 1.1;
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
