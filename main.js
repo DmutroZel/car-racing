@@ -44,13 +44,13 @@ $('#skin1').click(function () {
     
 })
 $('#skin2').click(function () {
-    $('.car').css('background-image', 'url("/img/photo_2024-11-17_16-41-48.jpg")');
+    $('.car').css('background-image', 'url("img/photo_2024-11-17_16-41-48.jpg")');
     $('.car').css('width', '110px');
     $('.car').css('height', '150px');
     $('.carContainer').css('margin-top', '150px');
 })
 $('#skin3').click(function () {
-    $('.car').css('background-image', 'url("/img/sherman-tank-02-removebg-preview.png")');
+    $('.car').css('background-image', 'url("img/sherman-tank-02-removebg-preview.png")');
     $('.car').css('width', '180px');
     $('.car').css('height', '100px');
     $('.carContainer').css('margin-top', '180px');
