@@ -95,7 +95,7 @@ $('body').on('keydown', function (e) {
 
 });
 let musicPlaying = false;
-let audio = new Audio('/audio/den.mp3');
+let audio = new Audio('./audio/den.mp3');
 
 $('#music').click(function() {
     if (musicPlaying) {
